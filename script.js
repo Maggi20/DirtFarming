@@ -27,11 +27,11 @@ function setup() {
     save()
     setTimeout(save, 10000)
     load();
-    //if (v.cartInvetory == v.dirtInCart){
-        //canClick = false;  
-        //cartFull = true;
-        //Cart.style.backgroundImage = "url(Images/FullDirtCart.png)";
-    //}
+    if (v.cartInvetory === v.dirtInCart){
+        canClick = false;  
+        cartFull = true;
+        Cart.style.backgroundImage = "url(Images/FullDirtCart.png)";
+    }
     for (let i = v.shovelSpeedUpgrade; i > 0; i--) {
         waitBeforeClickDelay -= 750;
         cartIsFullDelay -= 700;
