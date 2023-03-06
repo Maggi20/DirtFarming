@@ -1,0 +1,220 @@
+.animateCart {
+    animation-name: cartAnimation, cartAnimation2;
+    animation-timing-function: linear;
+    animation-delay: 0s, 10s;
+    animation-duration: 10s;
+}
+.animateShovel {
+    animation: ShovelAnimation 2s;
+    animation-timing-function: linear;
+}
+.animateDirtyShovel {
+    animation: DirtyShovelAnimation 4s; 
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+body{
+    background-color: dodgerblue;
+    font-size: 100px;
+    overflow: hidden;
+}
+#MineEntrance {
+    background-image: url(Images/MineEntrence.png);
+    position: absolute;
+    height:471px;
+    width: 320px;
+    bottom: 50px;
+    right: 0px;
+}
+#Shovel {
+    background-image: url(Images/Level1Shovel.png);
+    position: absolute;
+    height: 215px;
+    width: 300px;
+    bottom: 200px;
+    left: 200px;
+    rotate: -30deg;
+    opacity: 0;
+}
+#DirtyShovel {
+    background-image: url(Images/Level1ShovelDirty.png);
+    position: absolute;
+    height: 215px;
+    width: 300px;
+    bottom: 100px;
+    left: 100px;
+    rotate: -10deg;
+    opacity: 0;
+}
+#Ground {
+    background-image: url(Images/DirtAndGrass.png);
+    position: absolute;
+    height: 168px;
+    width: 100%;
+    bottom: 0;
+    left: 0px;
+}
+#Dirt {
+    background-image: url(Images/DirtForWebsite.png);
+    position: absolute;
+    height: 126px;
+    width: 398px;
+    bottom: 55px;
+    left: -110px;
+    cursor: url(Images/CursorShovel.png) 0 50, pointer;
+}
+#Cart {
+    background-image: url(Images/EmtyDirtCart.png);
+    position: absolute;
+    height: 220px;
+    width: 230px;
+    bottom: 45px;
+    left: 325px;
+    opacity: 1;
+    cursor: pointer;
+}
+#Rails {
+    background-image: url(Images/Raills.png);
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: 73px;
+    left: 0px;
+}
+#WhiteBackground {
+    background-image: url(Images/White.png);
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+}
+#Menu {
+    opacity: 0;
+}
+#button1 {
+    background-image: url(Images/RedX.png);
+    position: absolute;
+    width: 100px;
+    height: 88px;
+    right: 25px;
+    top: 25px;
+    border: none;
+    cursor: pointer;
+}
+#buttonShovelSpeed {
+    position: absolute;
+    height:  50px;
+    width: 180px;
+    right: 100px;
+    top: 200px;
+    color: blue;
+}
+#buttonCartSpeed {
+    position: absolute;
+    height:  50px;
+    width: 175px;
+    right: 100px;
+    top: 300px;
+    color: blue;
+}
+#buttonCartInvetory {
+    position: absolute;
+    height: 50px;
+    width: 175px;
+    right: 100px;
+    top: 400px;
+    color: blue;
+}
+@keyframes cartAnimation {
+    0%{
+        left: 325;
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        left: 85%; 
+        opacity: 0;
+    }
+    100%{
+        left: 85%;
+        opacity: 0;
+    }
+}
+@keyframes cartAnimation2 {
+
+    0%{
+        left: 85%;
+        opacity: 0;
+    }
+    20%{
+        left: 85%;
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        left: 325px;
+    }
+}
+@keyframes ShovelAnimation {
+    0% {
+        bottom: 200px;
+        left: 200px;
+        rotate: -30;
+        opacity: 1;
+    }
+    50% {
+        rotate: -30deg;
+    }
+    99% {
+        bottom: 100px;
+        left: 100px;
+        opacity: 1;
+        rotate: -10deg;
+    }
+    100%{
+        opacity: 0;
+        rotate: -10deg;
+        bottom: 100px;
+        left: 100px;
+    }
+}
+@keyframes DirtyShovelAnimation {
+    0%{
+        opacity: 1;
+        left: 100px;
+        bottom: 100px;
+        rotate: -10deg;
+    }   
+    25%{
+        rotate: -20deg;
+    }
+    45%{
+        transform: scaleX(1);
+        rotate: -20deg;
+    }
+    60%{
+        transform: scaleX(-1);
+        left: 270px;
+        bottom: 275px;
+        rotate: 60deg;
+    }
+    75%{
+        transform: scaleX(-1);
+        left: 270px;
+        bottom: 220px;
+        rotate: 60deg;
+    }
+    100%{
+        transform: scaleX(-1);
+        left: 270px;
+        bottom: 220px;
+        rotate: 60deg;
+        opacity: 1;
+    }
+
+}
