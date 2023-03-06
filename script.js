@@ -132,7 +132,6 @@ function cartIsFull() {
         v.dirtInCart = v.cartInvetory;
     }
     document.getElementById("DirtInCart").innerHTML = v.dirtInCart + " Dirt in cart";
-
 }
 function resetvar() {
     v.dirtscore = 0;
