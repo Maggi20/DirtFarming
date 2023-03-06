@@ -23,7 +23,7 @@ let waitBeforeClickDelay = 6200;
 let cartIsFullDelay = 5600;
 let cartdelay = 10000;
 
-if (v.firstTime) {
+if (v.firstTime === true) {
     v.firstTime = false;
     save();
 }
