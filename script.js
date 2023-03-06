@@ -25,7 +25,7 @@ let cartdelay = 10000;
 
 if (v.firstTime) {
     v.firstTime = false;
-    save()
+    save();
 }
 setup()
 function setup() { 
@@ -40,7 +40,7 @@ function setup() {
         cartIsFullDelay -= 700;
     }
     for (let e = v.cartSpeedUpgrade; e > 0; e--) {
-        cartdelay -= 1000
+        cartdelay -= 1000;
     }
     if (v.shovelSpeedUpgrade == 7) {
         document.getElementById("buttonShovelSpeed").innerText = "MAX"
