@@ -22,6 +22,7 @@ let waitBeforeClickDelay = 6200;
 let cartIsFullDelay = 5600;
 let cartdelay = 10000;
 
+resetvar()
 setup()
 function setup() { 
     load();
