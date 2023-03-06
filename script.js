@@ -24,6 +24,8 @@ let cartdelay = 10000;
 
 setup()
 function setup() { 
+    save()
+    setTimeout(save, 10000)
     load();
     if (v.cartInvetory == v.dirtInCart){
         canClick = false;  
@@ -60,7 +62,6 @@ function setup() {
     document.getElementById("DirtyShovel").style.animationDuration = v.dirtyShovelSpeed + "s";
     document.getElementById("Cart").style.animationDelay = "0s, " + cartdelay/1000 + "s";
     document.getElementById("Cart").style.animationDuration = v.cartSpeedvar + "s";
-    setTimeout(save, 10000)
     document.getElementById("DirtScore").innerHTML = v.dirtscore + " Dirt";
     document.getElementById("DirtInCart").innerHTML = v.dirtInCart + " Dirt in cart";
 }
