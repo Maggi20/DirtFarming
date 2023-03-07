@@ -26,7 +26,7 @@ setup()
 function setup() { 
     load();
     if(v == null) {
-        let v = {
+        v = {
             dirtscore: 0,
             dirtInCart: 0,
             cartInvetory: 5,
@@ -43,6 +43,8 @@ function setup() {
             cartInvetoryPrice: 50,
             cartInvetoryUpgrade: 0
         }
+        save()
+        load()
     }
     if (v.cartInvetory === v.dirtInCart){
         canClick = false;  
