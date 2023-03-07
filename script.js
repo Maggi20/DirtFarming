@@ -24,7 +24,6 @@ let cartdelay = 10000;
 
 function setup() { 
     load();
-    document.getElementById("buttonStart").style.opacity = "0"
     if (v.cartInvetory === v.dirtInCart){
         canClick = false;  
         cartFull = true;
