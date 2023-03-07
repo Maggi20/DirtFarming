@@ -22,8 +22,12 @@ let waitBeforeClickDelay = 6200;
 let cartIsFullDelay = 5600;
 let cartdelay = 10000;
 
+setup()
 function setup() { 
     load();
+    if(v == null) {
+        resetvar()
+    }
     if (v.cartInvetory === v.dirtInCart){
         canClick = false;  
         cartFull = true;
@@ -61,7 +65,7 @@ function setup() {
     document.getElementById("Cart").style.animationDuration = v.cartSpeedvar + "s";
     document.getElementById("DirtScore").innerHTML = v.dirtscore + " Dirt";
     document.getElementById("DirtInCart").innerHTML = v.dirtInCart + " Dirt in cart";
-    setTimeout(save, 10000)
+    save()
 }
 
 function save(){
