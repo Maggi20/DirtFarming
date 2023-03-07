@@ -22,10 +22,6 @@ let waitBeforeClickDelay = 6200;
 let cartIsFullDelay = 5600;
 let cartdelay = 10000;
 
-load();
-save();
-
-setup()
 function setup() { 
     load();
     if (v.cartInvetory === v.dirtInCart){
