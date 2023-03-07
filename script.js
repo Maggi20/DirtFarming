@@ -1,5 +1,4 @@
 let v = {
-    firstTime: true,
     dirtscore: 0,
     dirtInCart: 0,
     cartInvetory: 5,
