@@ -26,7 +26,23 @@ setup()
 function setup() { 
     load();
     if(v == null) {
-        resetvar()
+        let v = {
+            dirtscore: 0,
+            dirtInCart: 0,
+            cartInvetory: 5,
+            shovelStrenkt: 1,
+            shovelSpeedvar: 2,
+            dirtyShovelSpeed: 4,
+            dirtyshovelDelay: 2,
+            cartSpeedvar: 5,
+            shovelSpeedUpgrade: 0,
+            shovelSpeedPrice: 20,
+            cartSpeedvar: 10,
+            cartSpeedPrice: 20,
+            cartSpeedUpgrade: 0,
+            cartInvetoryPrice: 50,
+            cartInvetoryUpgrade: 0
+        }
     }
     if (v.cartInvetory === v.dirtInCart){
         canClick = false;  
