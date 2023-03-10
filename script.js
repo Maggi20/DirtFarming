@@ -74,7 +74,7 @@ function setup() {
         document.getElementById("buttonCartInvetory").innerText = "MAX"
         document.getElementById("buttonCartInvetory").style.color = "red"
     } else {
-        document.getElementById("buttonCartInvetory").innerText = "Cart speed increse 0.75s " + v.cartSpeedPrice + " dirt";
+        document.getElementById("buttonCartInvetory").innerText = "Cart invetorty increse +1 " + v.cartSpeedPrice + " dirt";
     }
     document.getElementById("Shovel").style.animationDuration = v.shovelSpeedvar + "s";
     document.getElementById("DirtyShovel").style.animationDelay = v.dirtyshovelDelay + "s";
