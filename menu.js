@@ -55,6 +55,7 @@ function cartInvetory() {
         document.getElementById("buttonCartInvetory").innerText = "MAX";
         document.getElementById("buttonCartinvetory").style.color = "red";
     }
+    alert("HAHA");
 }
 function goldenShovel(){
     alert("HAHA");
