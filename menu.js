@@ -56,3 +56,6 @@ function cartInvetory() {
         document.getElementById("buttonCartinvetory").style.color = "red";
     }
 }
+function goldenShovel(){
+    alert("HAHA");
+}   
